@@ -6,10 +6,9 @@ Welcome to the Storybook Component Library! This repository contains a collectio
 Prerequisites
 Before you begin, ensure you have the following installed:
 
-Node.js (v14.x or later)
-npm (v6.x or later)
-Angular CLI (v11.x or later)
-Ins
+- Node.js (v14.x or later)
+- npm (v6.x or later)
+- Angular CLI (v11.x or later)
 
 ## 🛠 Usage
 Importing Components
