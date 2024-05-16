@@ -1,0 +1,49 @@
+//GENERAL COLOR
+$slate:(
+    0: #F5F7F9, 10: #EEF2F5, 20: #DDE3E7, 30: #C7CFD5, 40: #B0B9C0, 
+    50: #9BA4AB, 60: #858F96, 70: #6F7A81, 80: #59656D, 90: #455057, 
+    100: #303C44, 110: #172733
+);
+//COLOR
+
+
+$white: #FFFFFF;
+$black: #17181A;
+$info: #B96BFF;
+$success: #13C998;
+$warning: #FFB024;
+$danger: #FF4724;
+//SECONDARY COLOR
+$sand: #CC9955;
+$candle: #FFAA22;
+//DECORATIVE COLOR
+$goji: #FFB5B9;
+$ginger: #FFDEB5;
+$lemon: #FFFEB4;
+$lime: #DBFFB4;
+$melon: #B4FFDB;
+$mint: #B4F8FF;
+$lavender: #B4CCFF; 
+$acai: #ECB4FF; 
+$dbsred: #FF3333;
+$rouge: #EE1818;
+$lightcyan: #D0F4EA;
+
+//FONT
+$default-font-size: 1.6rem;
+$extra-bold: 800;
+$bold: 700;
+$medium: 600;
+$normal: 400;
+$light: 300;
+
+//GRID
+$gutter-vertical:2.4rem;
+$gutter-horizontal: 1.6rem;
+
+//breakpoint, 1em = 16px
+$xs-breakpoint:  10em;
+$sm-breakpoint:  20em; 
+$md-breakpoint:  47.9375em; // 767px
+$lg-breakpoint:  61.9375em; // 991px
+$xl-breakpoint:  115em; // Desktop Res

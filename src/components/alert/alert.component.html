@@ -1,0 +1,33 @@
+<ng-container *ngIf="toggle">
+    <div [ngClass]="{
+        'alert__container--error': alertType === 'error', 
+        'alert__container--warning': alertType === 'warning',
+        'alert__container--success': alertType === 'success',
+        'alert__container--general-white': alertType === 'info',
+        'alert__container--general-black': alertType === 'info-black'}" class="alert">
+        <span *ngIf="closable && showAction" class="icon alert__close" 
+        [ngClass]="{
+            'icon__close--white': alertType === 'info-black' && actionType ==='close',
+            'icon__close': actionType === 'close',
+            'icon__chevron--right-gray': actionType === 'arrow',
+            'icon__chevron--right-gray--white': alertType === 'info-black' && actionType === 'arrow'}"(click)="closeAlert()"></span>
+        <span class="icon alert__icon {{iconType}}" [ngClass]="{
+            'icon__snackbar--error': alertType === 'error', 
+            'icon__snackbar--warning': alertType === 'warning',
+            'icon__snackbar--success': alertType === 'success',
+            'icon__alert--info': alertType === 'info' || alertType === 'info-black' }">
+        </span>
+        <div *ngIf="alertTitle!=''" [ngClass]="{'alert__title--general-black': alertType === 'info-black'}"
+         class="alert__title">{{ alertTitle }}</div>
+        <div class="alert__text-container"[ngClass]="{'alert__text-container--margin':alertTitle!='', 
+         'alert__text-container--general-black': alertType === 'info-black'}">
+            <ng-content></ng-content>
+            <div *ngIf="alertMessages.length" class="alert__message-container">
+                <div *ngFor="let message of alertMessages" class="alert__message-holder">
+                    <span class="icon icon__close alert__list-bullet"></span>
+                    <p class="alert__message">{{ message }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
