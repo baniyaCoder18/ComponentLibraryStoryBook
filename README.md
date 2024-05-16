@@ -1,6 +1,34 @@
-# ComponentLibrary
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+## 📚 Storybook Component Library
+Welcome to the Storybook Component Library! This repository contains a collection of reusable UI components built using Angular, styled with SCSS, and documented with Storybook.
+
+## 🚀 Getting Started
+Prerequisites
+Before you begin, ensure you have the following installed:
+
+Node.js (v14.x or later)
+npm (v6.x or later)
+Angular CLI (v11.x or later)
+Ins
+
+## 🛠 Usage
+Importing Components
+To use the components in your Angular project, import them from the library.
+
+## 📦 Building the Library
+To build the component library, run:
+
+`npm run build`
+This will compile the components and output the build artifacts in the dist directory.
+
+## ✅ Testing
+To run the tests for the components, use:
+`npm test`
+## 🤝 Contributing
+Contributions are welcome! Please read the CONTRIBUTING file for guidelines on how to contribute to this project.
+
+## 📞 Contact
+If you have any questions or feedback, feel free to open an issue or contact me at rahul.agrawal182@gmail.com.
 
 ## Development server
 
